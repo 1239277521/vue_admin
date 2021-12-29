@@ -1,0 +1,38 @@
+@mixin ellipsishidden {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin ellipstransitionright {
+    -webkit-animation: scale-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+  
+@-webkit-keyframes scale-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+@keyframes scale-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@mixin PositionHomePage {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  font-size: .12rem;
+}
